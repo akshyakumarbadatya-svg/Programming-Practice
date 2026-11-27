@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo</title>
+<style>
+    /* h2:nth-child(2){
+                background-color: rgb(24, 25, 25);
+                color:orange;
+
+    }
+    h1:first-child{
+        color: blue;
+        
+    }
+    h5:nth-child(5){
+        color:violet;
+    }
+    input:checked{
+        accent-color: rgb(67, 23, 121);
+    } */
+     .wrap{
+        width:100%;
+        height:100vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+     }
+    h1::first-letter{
+        color:orange;
+    
+    }
+    span{
+        color:orange;
+        font-size: 15rem;
+    }
+    h1::before{
+        content: "❤️";
+    }
+    h1::after{
+        content: "❤️";
+    }
+    p{
+        font-size: 3rem;
+    }
+    p::selection{
+        color: red;
+        background-color: black;
+    }
+    input::placeholder{
+        color:red;
+    }
+</style>
+</head>
+
+<body>
+    <h1>Pysider | btmlayout</h1>
+     <h2>courses</h2>
+     <h3>Webtech</h3>
+     <H4>PYTHON</H4>
+     <h5>Oracle SQL</h5>
+     <br><br>
+     <input type="checkbox" name="" id="">
+     <!-- psuedo elements:
+      first-letter 
+      first-line
+      before
+      after
+      selection
+      placeholder
+      marker           -->
+      <div class="wrap">
+        <h1>p<span>y</span>spider</h1>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto exercitationem repudiandae quasi a sed praesentium, ea maxime quidem atque aut voluptas pariatur rem velit. Sunt, provident eius. Commodi, est dolorum.
+      Commodi cumque dignissimos obcaecati provident non! Nihil, optio praesentium. Laborum quod possimus, delectus minus nihil nobis asperiores cumque, eos nisi ipsum beatae. Aspernatur perspiciatis, aperiam minima deleniti doloremque numquam debitis.
+      Aliquam consequatur eum vero. Laboriosam ab ipsum eius magni inventore dolor soluta, sed id beatae cumque culpa earum natus officia placeat dolorem deserunt laudantium. Autem tempora ab sunt veniam dolor.
+      Ad facilis ipsam eius nostrum, consequuntur tempora magnam, mollitia illo dolorem debitis consectetur accusamus error eum ut dolore, quisquam totam architecto optio voluptate hic corporis. Sequi velit alias officiis voluptate.
+      Delectus odit debitis neque rerum cum ipsam veritatis dolore quo nam. Consequatur ab qui dolore! Ducimus laborum iure aliquam a, optio corrupti voluptates sit obcaecati maiores nobis, possimus nostrum eveniet.
+      Reprehenderit, voluptatum sapiente! Placeat, quos. Nam odit consequatur doloribus ut vero, voluptate, corporis ipsam a in totam obcaecati atque natus laborum rerum eaque quisquam repellendus at quibusdam et quas consequuntur.
+      Accusamus, et totam! Mollitia cupiditate laborum, rerum rem illum ullam aspernatur sapiente a, alias labore expedita blanditiis, deserunt nisi quaerat aliquam pariatur vel? Facilis voluptatem iusto quod! Odit, deserunt dolorum.
+      Voluptates voluptate quis nulla velit incidunt maiores iure labore nisi nesciunt, qui fuga quas doloremque facere ratione odit atque dolore fugiat voluptas, omnis veniam, nostrum impedit. Possimus neque distinctio repellat?
+      Quia fuga eveniet a ea non quae harum nesciunt aperiam. Dignissimos mollitia praesentium dolores nihil repellendus saepe laborum tempore quo odit est, exercitationem cum libero suscipit velit cupiditate dolor aperiam.
+     fugit libero molestias blanditiis earum alias distinctio deserunt! Numquam, commodi. Et.
+      Dignissimos nobis perferendis aliquid ipsam a distinctio voluptatum veritatis dolore error neque, cupiditate soluta saepe.</p>
+      <hr>
+      <input type="text" name="" id="" placeholder="Username">
+      <br><br><br><br><br><br><br>
+
+</body>
+</html>

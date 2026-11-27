@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* Descendent selector */
+
+        .family-1 h1{
+            background-color: black;
+            color: orange;
+        }
+/* Child Selector */
+        .family-1>p{
+            font-size: 4rem;
+            background-color: aqua;
+        }
+        
+        
+/* Adjacent-sibling selector(+) */
+        .sibling-1+h2{
+            background-color: yellow;
+        }
+        
+/* Genaral-Sibling Selector(~) */
+        .sibling-1~h1{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="family-1">
+        <h1>Hello,Welcome to family-1</h1>
+        <h1>Sribatch Badatya</h1>
+        <h1>Simancahl Badatya</h1>
+        <h1>Nilanchal Badatya</h1>
+
+        <div>
+            <h1>Alekha Baadatya</h1>
+            <h1>Ashok Kuamar Badatya</h1>
+            <h1>Abhya kumar</h1>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat quisquam quam excepturi! Quibusdam optio error omnis, delectus esse dignissimos ipsum. Enim, recusandae ducimus a quidem voluptas expedita praesentium exercitationem maxime.</p>
+    </div>
+    <hr>
+    <div class="family-2">
+        <h1 class="sibling-1"></h1>
+        <h2>Sibling2</h2>
+        <h1>Simanchal</h1>
+        <h1>Jananti</h1>
+        <div>
+            <h1>Sisant</h1>
+            <h1>Laxmi</h1>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro incidunt nihil fugiat sapiente, quod minus vero perspiciatis ipsam laudantium deleniti ad reprehenderit aut maiores suscipit illo repudiandae eum officiis voluptates.</p>
+    </div>
+</body>
+</html>
