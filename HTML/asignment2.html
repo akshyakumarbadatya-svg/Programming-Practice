@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotation</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .main{
+            height:100vh;
+            width: 100vw;
+            /* border:3px solid red; */
+            background-color: orange;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: yellow;
+            font-size: 3rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* border-radius:30px ; */
+
+
+        }
+        .sub-main{
+            height:20vh;
+            width: 90vw;
+            background-color: yellow;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius:30px;
+
+        }
+
+        .items{
+            height: 100px;
+            width: 100px;
+            /* border: 3px solid blue; */
+            background: linear-gradient(green);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border-radius: 50px; */
+            box-shadow: 15px 15px 10px rgb(64, 2, 79),
+                        -15px -15px -10px yellow ;
+            transition:all 1000ms ease-in-out;
+
+        }
+        .rotate>.items:nth-child(1):hover{
+            transform:rotateX(180deg);
+        }
+        .rotate>.items:nth-child(2):hover{
+            transform: rotateY(360deg);
+        }
+        .rotate>.items:nth-child(4):hover{
+            transform:rotateX(120deg) rotateY(90deg) rotateZ(250deg);
+        }
+        /* scale */
+        .scale>.items:nth-child(1):hover{
+            transform:scaleX(2.0);
+        }
+        .scale>.items:nth-child(2):hover{
+            transform:scaleY(1.2);
+
+        }
+        .scale>.items:nth-child(3):hover{
+            transform: scaleZ(0.2);
+        }
+        /* skew */
+        .skew>.items:nth-child(1):hover{
+            transform:skewX(200deg);
+        }
+        .skew>.items:nth-child(2):hover{
+            transform: skewY(120deg);
+
+        }
+        .skew>.items:nth-child(3):hover{
+            transform: skewX(45deg);
+            transform: skewY(180deg);
+            transform: skewZ(90deg);
+        }
+        /* skew */
+        /* transfrom:skewX('deg')
+        transfrom:skewY('deg')
+        transfrom:skewY('deg') 
+        transfrom:skewX('deg') skewY('deg*/
+    </style>
+</head>
+<body>
+    <div class="main"><p>rotate</p>
+        <div class="sub-main rotate">
+            <div class="items">X</div>
+            <div class="items">Y</div>
+            <div class="items">Z</div>
+            <div class="items">X,Y,Z</div>
+        </div>
+        <p>scale</p>
+        <div class="sub-main scale">
+            <div class="items">X</div>
+            <div class="items">Y</div>
+            <!-- <div class="items">Z</div> -->
+            <div class="items">X,Y,Z</div>
+         </div>
+            <p>Skew</p>
+        <div class="sub-main skew">
+            <div class="items">X</div>
+            <div class="items">Y</div>
+            <div class="items">Z</div>
+            <div class="items">X,Y,Z</div>
+    </div>
+</body>
+</html>
